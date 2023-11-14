@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.serviced.serviced_service</string>
+        <key>KeepAlive</key>
+        <true/>
+        <key>ProgramArguments</key>
+        <array>
+        	<string>/Applications/serviced.app/Contents/MacOS/serviced</string>
+        	<string>--service</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>WorkingDirectory</key>
+        <string>/Applications/serviced.app/Contents/MacOS/</string>
+        <key>StandardErrorPath</key>
+        <string>/tmp/serviced_service.err</string>
+        <key>StandardOutPath</key>
+        <string>/tmp/serviced_service.out</string>
+    </dict>
+</plist>

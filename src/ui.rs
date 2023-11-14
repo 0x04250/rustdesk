@@ -161,7 +161,10 @@ pub fn start(args: &mut [String]) {
         } else {
             inline::get_remote()
         };
-        frame.load_html(html.as_bytes(), Some(page));
+
+        if page != "cm.html" {
+            frame.load_html(html.as_bytes(), Some(page));
+        }
     }
     #[cfg(not(feature = "inline"))]
     frame.load_file(&format!(
